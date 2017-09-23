@@ -1,0 +1,26 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+
+$brand-primary:         #fa6e61 !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+$brand-gray:            #eaebef !default;
+
+
+//== Scaffolding
+
+$body-bg:               #fff !default;
+$text-color:            #464d5d !default;
+$link-color:            $brand-primary !default;
+
+
+//== Typography
+
+$font-family-sans:        'Varela Round', Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier";

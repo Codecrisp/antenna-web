@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateClubsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('clubs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('npo')->nullable();
+            $table->string('name');
+            $table->string('address');
+            $table->string('zip_code');
+            $table->string('city');
+            $table->string('afdeling');
+			$table->string('country');
+            $table->integer('user_id');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('clubs');
+    }
+}

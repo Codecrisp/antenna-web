@@ -1,0 +1,176 @@
+
+// LARGE DEVICES
+/* -------------------------------------------------- */
+@media (max-width: 1199px) { 
+
+}
+
+
+
+
+// MEDIA DEVICES
+/* -------------------------------------------------- */
+@media (max-width: 993px) { 
+
+	#intro {
+		position: relative;
+		min-height: 450px;
+		padding: 25px 0;
+		text-align: center;
+		@include font-size(2.4);
+		& .content {
+			float: none;
+			width: 100%;	
+			padding-top: 100px;
+			padding-bottom: 50px;
+		}
+		& .laptop {
+			display: inline-block;
+			position: relative;
+			top: auto;
+			top: 0;
+			right: 0;
+			width: 300px;
+			& img {
+				width: 100%;
+			}
+		}
+	}
+
+	#features {
+		position: relative;
+		padding: 50px 0 0;
+		text-align: center;
+		@include font-size(1.4);
+		border-bottom: 10px solid darken($brand-gray,5);
+		& .content {
+			float: none;
+			width: 100%;	
+		}
+		& .iphones {
+			display: inline-block;
+			position: relative;
+			bottom: 0;
+			left: 0;
+			width: 220px;
+		}
+		& .feature {
+			position: relative;
+			float: left;
+			width: 33%;
+			margin: 20px 0;
+			color: $brand-primary;
+			&:last-child {
+				width: 33%;
+			}
+			& i {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				margin-bottom: 15px;
+				@include font-size(5.8);
+				border-radius: 100px;
+				background-color: $text-color;
+			}
+		}
+	}
+
+}
+
+
+
+
+// SMALL DEVICES
+/* -------------------------------------------------- */
+@media (max-width: 767px) { 
+	
+	.nav-toggle {
+		display: block;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	.nav-links {
+		& li {
+			& a {
+				color: #fff;
+			}
+		}
+	}
+
+}
+
+
+
+@media (max-width: 499px) { 
+	
+	.logo {
+		position: relative;
+		float: left;
+		width: auto;
+		height: 65px;
+		line-height: 65px;
+		padding: 0 20px;
+		background-color: $brand-primary;
+		color: #fff;
+		@include font-size(2.6);
+	}
+
+	#features {
+		& .feature {
+			position: relative;
+			float: left;
+			width: 100%;
+			margin: 20px 0;
+			color: $brand-primary;
+			&:last-child {
+				width: 100%;
+			}
+			& i {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				margin-bottom: 15px;
+				@include font-size(5.8);
+				border-radius: 100px;
+				background-color: $text-color;
+			}
+		}
+	}
+
+	#purchase {
+		width: 100%;
+		padding: 25px 0;
+		text-align: center;
+		& .pricing {
+			@include font-size(1.7);
+		}
+		& .btn {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	#testimonials {
+		& .byline {
+			margin-bottom: 50px;
+			color: $brand-primary;
+			@include font-size(1.8);
+		}	
+	}
+
+	#footer {
+		text-align: center;
+		& .copyright {
+			float: none;
+		}
+		& .social {
+			float: none;
+		}
+	}
+
+}	
